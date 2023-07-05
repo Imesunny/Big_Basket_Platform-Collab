@@ -2,7 +2,8 @@
     width: 80%;
     margin: auto;
     margin-top: 20px;
-    border: 2px solid black;
+    margin-bottom: 20px;
+   
     display: flex;
    align-items: center;
    justify-content: space-evenly;
@@ -36,7 +37,7 @@ input{
 }
 
 #my_basket{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding: 2em;
     margin-right: -90px;
     background-color: rgb(248, 245, 245);
@@ -49,5 +50,25 @@ input{
    padding: 5px;
 }
 
+/* css to vegetables */
+
+#vegetables{
+    margin-top: px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:10px;
+   margin: auto;
+}
+
+#card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#card>img{
+    margin-left: auto;
+    width: 80%;
+}
+#card:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
 
 
