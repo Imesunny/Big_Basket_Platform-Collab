@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" href="https://www.bbassets.com/static/v2514/images/favicon.ico?v=2514" type="image/x-icon">
 </head>
 <body>
-    
+    <div id="mainContainer">
+        <div id="leftsideBox">
+            <h2>Payment Options</h2>
+            <div id="paymentoptBox">
+                <div id="payOption">
+                    <p onclick="creditdebit()">Credit / Debit Card</p>
+                    <hr>
+                    <p onclick="Netbanking()">Netbanking</p>
+                    <hr>
+                    <p onclick="upi()">UPI</p>
+                    <hr>
+                    <p onclick="wallet()">Wallet</p>
+                    <hr>
+                    <p onclick="paylater()">Pay Later</p>
+                    <hr>
+                    <p onclick="cashcarddel()">Cash/Card On Delivery</p>
+                    <hr>
+                </div>
+
+                <div id="payDetail">
+                    <div id="mainDiv">
+                        <h3>Credit/Debit Card</h3>
+                    <p>Card Number</p>
+                    <input type="text" name="" class="cardno" placeholder="Enter Card Number">
+                    <div id="carddeta">
+                        <div>
+                            <p>Valid Thru</p>
+                            <input type="number" class = "mmyy" placeholder="MM/YY">
+                        </div>
+                        <div>
+                            <p>CVV</p>
+                            <input type="number" class = "cvv" placeholder="CVV">
+                        </div>
+                     </div>
+                     <a href="paymentSuccessful.html"><button id="cnfrmBtn">Place Order & Pay</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="rightsideBox">
+            <h3>Order Summary</h3>
+            <div id="grayBox">
+                <div id="ordrSumBox">
+                    <div id="price">
+                        <p>Basket Value</p>
+                        <p id="basketValue"></p>
+                    </div>
+                    <div id="aftrPrice">
+                        <h3>Total Amount Payable</h3>
+                        <h3 id="totalpayable"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script src="payment.js"></script>

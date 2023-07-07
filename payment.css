@@ -1,0 +1,132 @@
+#mainContainer{
+    /* border: 1px solid lightgrey; */
+    width: 90%;
+    margin: auto;
+    height: 700px;
+    display: flex;
+    gap: 40px;
+}
+#leftsideBox{
+    border: 1px solid lightgrey;
+    width: 60%;
+    height: 670px;
+    margin-top: 15px;
+    margin: auto;
+    padding: 10px;
+}
+#rightsideBox{
+    /* border: 1px solid blue; */
+    height: 300px;
+    margin-top: 15px;
+    width: 35%;
+    padding: 20px;
+}
+#grayBox{
+    border: 1px solid lightgrey;
+    padding: 20px;
+    background-color: #f6f6f6  ;
+}
+#ordrSumBox{
+    border: 1px solid lightgrey;
+    height: 160px;
+    padding: 20px;
+    background-color: white;
+}
+#price{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* border: 1px solid blue; */
+    height: 50px;
+    margin-top: 10px;
+}
+#aftrPrice{
+    display: flex;
+    gap: 170px;
+}
+#paymentoptBox{
+    border: 1px solid lightgrey;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    background-color: #f6f6f6;
+}
+#payOption{
+    border: 1px solid lightgrey;
+    width: 25%;
+    line-height: 40px;
+    background-color: white;
+}
+#payOption p{
+    margin-left: 15px;
+}
+#payOption p:hover{
+    cursor: pointer;
+}
+#payDetail{
+    border: 1px solid lightgrey;
+    width: 75%;
+    height: 300px;
+    background-color: white;
+}
+#carddeta{
+    display: flex;
+    gap: 30px;
+}
+#mainDiv{
+    margin-left: 30px;
+}
+#cnfrmBtn{
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    background-color: #5e9400;
+    color: white;
+    border: transparent;
+}
+.cardno{
+    padding: 10px 45px 10px 45px;
+}
+.mmyy{
+    padding: 10px;
+    width: 40%;
+}
+.cvv{
+    padding: 10px;
+    width: 40%;
+}
+#upibtn{
+    padding: 6px 15px 6px 15px;
+    border-radius: 4px;
+    background-color: #5e9400;
+    color: white;
+    border: transparent;
+}
+#inpupi{
+    width: 60%;
+    padding: 8px;
+}
+#netbtn{
+    padding: 8px 15px 8px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #5e9400;
+    color: white;
+    border: transparent;
+    margin-top: 15px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+#hr{
+    margin-top: -25px;
+    margin-bottom: 25px;
+}
+#bigimg{
+    width: 25%;
+    margin-top: -8px;
+}
