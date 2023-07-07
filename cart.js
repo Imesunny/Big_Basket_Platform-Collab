@@ -45,15 +45,42 @@ var VegArr = [
     }
 ]
 
-// Function to update the table content
 function updateTableContent(VegArr) {
     var tbody = document.querySelector("table tbody");
     tbody.innerHTML = "";
   
     var totalItems = 0;
     var totalAmount = 0;
+    var totalSavings = 0;
   
-    VegArr.forEach(function (item) {
+    VegArr.forEach(function (item,index) {
+
+        var subtotal = (item.quantity || 0) * item.pricePerKg;
+        totalItems += (item.quantity || 0);
+        totalAmount += subtotal;
+        savings += (item.pricePerKg - item.DiscountPrice) * (item.quantity || 0);
+
+  var subtotalTag = document.querySelector("#upperAdjustment b:nth-child(1)");
+  subtotalTag.textContent = "Subtotal: ₹" + totalAmount;
+
+  var totalTag = document.querySelector("#upperAdjustment b:nth-child(2)");
+  totalTag.textContent = totalAmount;
+
+  var totalAmountTag = document.querySelector("#LowerAdjustment b:nth-child(1)");
+  totalAmountTag.textContent = "TOTAL: ₹" + totalAmount;
+
+  var addTotalTag = document.querySelector("#LowerAdjustment b:nth-child(2)");
+  addTotalTag.textContent = totalAmount;
+
+  var savingsTag = document.querySelector("#checkout_right p");
+  savingsTag.textContent = "₹" + totalSavings;
+
+
+      var subtotal = (item.quantity || 0) * item.pricePerKg;
+      totalItems += item.quantity || 0;
+      totalAmount += subtotal;
+      totalSavings += (item.pricePerKg - item.DiscountPrice) * (item.quantity || 0);
+  
       var row = document.createElement("tr");
   
       var itemName = document.createElement("td");
@@ -83,6 +110,24 @@ function updateTableContent(VegArr) {
           updateTableContent(VegArr);
         }
       });
+
+      var deleteButton = document.createElement("button");
+deleteButton.classList.add("delete-button");
+deleteButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
+
+var deleteButtonWrapper = document.createElement("td");
+deleteButtonWrapper.style.display = "flex";
+deleteButtonWrapper.style.justifyContent = "center";
+deleteButtonWrapper.appendChild(deleteButton);
+
+        
+        deleteButton.addEventListener("click", function () {
+            VegArr.splice(index, 1); 
+            updateTableContent(VegArr);
+        
+        var tbody = document.querySelector("table tbody");
+        tbody.removeChild(row);
+      });
   
       itemQuantity.appendChild(decreaseButton);
       itemQuantity.appendChild(document.createTextNode(" " + (item.quantity || 0) + " "));
@@ -101,11 +146,9 @@ function updateTableContent(VegArr) {
       row.appendChild(itemQuantity);
       row.appendChild(itemSubtotal);
       row.appendChild(itemSavings);
+      row.appendChild(deleteButtonWrapper);
   
       tbody.appendChild(row);
-  
-      totalItems += (item.quantity || 0);
-      totalAmount += subtotal;
     });
   
     var summaryRow = document.createElement("tr");
@@ -113,11 +156,21 @@ function updateTableContent(VegArr) {
       <td colspan="2">Fruits & Vegetables ${VegArr.length} items</td>
       <td>Total: ${totalItems}</td>
       <td>Total Amount: ₹${totalAmount}</td>
-      <td></td>
+      <td>Total Savings: ₹${totalSavings}</td>
     `;
   
     tbody.appendChild(summaryRow);
-  }
+
+    var table = document.querySelector("table");
+    table.style.textAlign = "center";
+    table.style.fontSize = "16px";
   
+    // Apply CSS styles to the table cells (<td>)
+    var tableCells = document.querySelectorAll("table td");
+    tableCells.forEach(function (cell) {
+      cell.classList.add("table-cell");
+    });
+  
+  }
   updateTableContent(VegArr);
   
