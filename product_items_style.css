@@ -226,3 +226,41 @@ input[type="checkbox"] + span:hover {
   font-size: 15px;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 1067px) {
+  #holder_section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .category_section {
+    display: none;
+  }
+}
+@media only screen and (max-width: 561px) {
+  #holder_section {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .category_section {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  #holder_section {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+
+  .category_section {
+    display: none;
+  }
+}
