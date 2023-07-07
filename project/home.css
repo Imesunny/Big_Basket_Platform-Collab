@@ -1,14 +1,46 @@
+#nav1{
+    
+    width: 90%;
+    /* display: block; */
+}
+#nav1-child{
+    font-size: 14px;
+    float: right;
+    margin: auto;
+    display: flex;
+}
+#nav1-child>p{
+   
+    padding-left: 10px;
+}
+#nav1-child p>a{
+    text-decoration: none;
+    color: black;
+}
+.but{
+    background: white;
+    border: none;
+}
+#nav1-child p>a:hover{
+    color: #84c225;
+}
+.but:hover{
+    color: #84c225;
+}
+
+/* navbar */
+
 #navbar{
     width: 80%;
     margin: auto;
-    margin-top: 20px;
+
     margin-bottom: 20px;
    /* position: fixed; */
    background: white;
     display: flex;
    align-items: center;
    justify-content: space-evenly;
-   /* height: 40px; */
+ 
   
 
 }
@@ -245,9 +277,12 @@ margin: 10px;
 
 .footer-1{
    width: 80%;
+   font-size: 13px;
+
    margin: auto;
     border: 1px solid rgb(168, 166, 166);
     padding: 10px;
+    margin-bottom: 50px;
 }
 
 /* read more */
@@ -256,9 +291,68 @@ margin: 10px;
 }
 
 /* footer-2 */
-#footer-2{
+.footer-2{
+    font-size: 13px;
     display: grid;
-    grid-template-columns: repeat();
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-2 div ul>li{
+    margin-left: -40px;
+    list-style: none;
+    padding-bottom: 8px;
+}
+.footer_col{
+    color: #84c225;
+    font-size: 20px;
+}
+.abc{
+    display:block;
+     margin-left: 5px;
+}
+
+/* Media Quaries */
+@media only screen and ( min-width: 641px) and (max-width: 1007px) {
+    #box{
+        grid-template-columns: repeat(3,1fr);
+    }
+    #vegetables{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .offer{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .daily-beverages-beauty-home{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .fruit-snack-cleaning{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and ( min-width: 0px) and (max-width: 640px) {
+    #box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    #vegetables{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .offer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .daily-beverages-beauty-home{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .fruit-snack-cleaning{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-2{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 
