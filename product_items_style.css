@@ -4,12 +4,12 @@
 }
 
 .container {
-  margin: 5% 10%;
+  margin: 1% 3%;
 }
 
 .container {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
   justify-content: flex-start;
 }
@@ -17,7 +17,7 @@
 #holder_section {
   display: grid;
   grid-template-columns: repeat(4, auto);
-  gap: 30px;
+  gap: 20px;
   justify-content: space-evenly;
 }
 
@@ -36,7 +36,7 @@
 
 .child > img:first-of-type {
   width: 100%;
-  height: 180px;
+  height: 170px;
   object-fit: scale-down;
 }
 
@@ -44,16 +44,24 @@
   color: #c11c1f;
   text-align: right;
   background-color: #fff;
-  font-size: 13px;
+  font-size: 11px;
   height: auto;
   padding: 5px 20px;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+#prices {
+  font-size: 12px;
+}
+
+.child > p {
+  font-size: 16px;
+}
+
 #options {
   width: 100%;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #prices > span:first-of-type {
@@ -61,7 +69,7 @@
 }
 
 #delivery > span {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
 }
 
@@ -101,13 +109,17 @@
 
 #addtocartbutton > button {
   background: rgb(248, 218, 121);
-  font-size: 12px;
-  padding: 5px 10px;
+  font-size: 11px;
+  /* padding: 5px 10px; */
   margin: 0 15px;
   border: none;
-  margin-right: 10%;
+  /* margin-right: 10%; */
   width: 100%;
   cursor: pointer;
+}
+
+.child > div:first-of-type {
+  font-size: 10px;
 }
 
 #addtocartbutton > div > span {
@@ -177,19 +189,19 @@
 }
 
 input[type="checkbox"] {
-  height: 17px;
-  width: 17px;
+  height: 16px;
+  width: 16px;
   margin-right: 9px;
   display: inline-block;
   cursor: pointer;
 }
 
 input[type="checkbox"] + span {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 input[type="checkbox"] + span:hover {
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(132, 194, 37);
   cursor: pointer;
 }
