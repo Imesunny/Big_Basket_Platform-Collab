@@ -49,10 +49,10 @@ var vegetableContainer = document.querySelector("#vegetables");
 
 displayFunc(vegetables);
 
-function displayFunc(vegi){
-    vegetableContainer.innerhtml = "";
+function displayFunc(array){
+   array.innerhtml = "";
 
-vegi.forEach(function(item){
+array.forEach(function(item){
    
     var card = document.createElement("div");
     card.setAttribute("id","card");
@@ -64,8 +64,8 @@ vegi.forEach(function(item){
     var addToCart = document.createElement("button");
 
     name.innerText = item.name;
-    pricePerKg.innerText = item.pricePerKg;
-    DiscountPrice.innerText = item.DiscountPrice;
+    pricePerKg.innerText = `Price per kg :- `+ item.pricePerKg;
+    DiscountPrice.innerText = `Discount price :-`+ item.DiscountPrice;
     deleveryDate.innerText = item.deleveryDate;
     image.src=item.img;
     addToCart.innerText ="Add To Cart";
@@ -81,8 +81,90 @@ vegi.forEach(function(item){
 })
 }
 
+   // BestSeller
+var bestSeller = [
+   {
+      img: "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
+      name: "capsicum - Green (Loose)",
+      pricePerKg:90,
+      DiscountPrice: 81,
+      deleveryDate: "Standard_Delivery : 10 july",
+
+   }
+   ,
+   {
+      img: "https://www.bigbasket.com/media/uploads/p/s/10000071_14-fresho-carrot-orange.jpg",
+      name: "Carrot - Orange (Loose)",
+      pricePerKg:130,
+      DiscountPrice: 108,
+      deleveryDate: "Standard_Delivery : 10 july",
+
+   }
+   ,
+   {
+      img: "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
+      name: "capsicum - Green (Loose)",
+      pricePerKg:90,
+      DiscountPrice: 81,
+      deleveryDate: "Standard_Delivery : 10 july",
+
+   }
+   ,
+   {
+      img: "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+      name: "Cauliflower (Loose)",
+      pricePerKg:90,
+      DiscountPrice: 81,
+      deleveryDate: "Standard_Delivery : 10 july",
+
+   }
+   ,
+   {
+      img: "https://www.bigbasket.com/media/uploads/p/s/10000148_30-fresho-onion.jpg",
+      name:" Onion (Loose)",
+      pricePerKg:45,
+      DiscountPrice: 33,
+      deleveryDate: "Standard_Delivery : 10 july",
+
+   }
+]
+
+  var best_seller = document.querySelector("#best-sellers");
+
+  displayFunc(bestSeller);
+  
+  
+
 var arrcart = JSON.parse(localStorage.getItem("cart")) || [];
 function addData(item){
  arrcart.push(item);
  localStorage.setItem("cart",JSON.stringify(arrcart));
 }
+
+
+
+
+
+
+
+
+// js for read more button which is in footer section
+
+var read = document.querySelector("#read")
+read.addEventListener("click",function(){
+   
+   var dots = document.querySelector("#dots");
+   var moreText = document.querySelector("#more");
+   // var btn = document.querySelector("read");
+
+   if(dots.style.display === "none"){
+      dots.style.display = "inline";
+      read.innerHTML = "Read more";
+      moreText.style.display = "none";
+   }
+   else{
+      dots.style.display = "none";
+      read.innerHTML = "Read less";
+      moreText.style.display = "inline";
+   }
+})
