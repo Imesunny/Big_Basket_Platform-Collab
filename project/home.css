@@ -17,14 +17,21 @@
     text-decoration: none;
     color: black;
 }
-.but{
+.but1{
+    background: white;
+    border: none;
+}
+.but2{
     background: white;
     border: none;
 }
 #nav1-child p>a:hover{
     color: #84c225;
 }
-.but:hover{
+.but1:hover{
+    color: #84c225;
+}
+.but2:hover{
     color: #84c225;
 }
 

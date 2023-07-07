@@ -168,3 +168,39 @@ read.addEventListener("click",function(){
       moreText.style.display = "inline";
    }
 })
+
+
+// functions for buttons
+
+// function myFunction() {
+//   var signUp= document.getElementsByClassName(".but2");
+// location.href = "Signup.html";
+//  }
+
+//  function myFunction() {
+//    var basket= document.querySelector("#my_basket1");
+//    location.href = "cart.html";
+//   }
+
+
+var login = document.querySelector(".but1");
+login.addEventListener("click",function(){
+   location.href = "login.html";
+})
+
+
+var signUp = document.querySelector(".but2");
+signUp.addEventListener("click",function(){
+   location.href = "Signup.html";
+})
+
+var basket = document.querySelector("#my_basket1");
+basket.addEventListener("click",function(){
+   location.href = "cart.html";
+})
+
+var vegs = document.querySelector("#veg");
+vegs.addEventListener("click",function(){
+   location.href = "product.html";
+})
+ 
