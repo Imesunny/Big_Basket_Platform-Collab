@@ -5,21 +5,21 @@ var product = [
   {
     img: "https://www.bigbasket.com/media/uploads/p/s/10000148_30-fresho-onion.jpg",
     title: "Onion (Loose)",
-
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 34234,
     options: [
       {
-        text: "1kg - 33 Rs",
-        discounrPrice: 33,
-        originalPrice: 45,
+        text: "1kg - 34234 Rs",
+        discounrPrice: 34234,
+        originalPrice: 3423434234,
       },
       {
         text: "2kg - 95 Rs",
-        discounrPrice: 95,
-        originalPrice: 1005,
+        discounrPrice: 3423434234,
+        originalPrice: 342343423434234,
       },
     ],
   },
@@ -27,9 +27,10 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000159_27-fresho-potato.jpg",
     title: "Potato",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
-    minPrice: 2342424,
+    category: "vegetables",
+    minPrice: 33,
     options: [
       {
         text: "1kg - 33 Rs",
@@ -47,9 +48,10 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000204_16-fresho-tomato-local.jpg",
     title: "Tomato - Local (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
-    minPrice: 23424,
+    category: "vegetables",
+    minPrice: 33,
     options: [
       {
         text: "1kg - 33 Rs",
@@ -67,8 +69,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg",
     title: "Carrot - Orange (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -89,8 +92,9 @@ var product = [
     title: "Onion (Loose)",
 
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -109,8 +113,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000159_27-fresho-potato.jpg",
     title: "Potato",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -129,8 +134,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000204_16-fresho-tomato-local.jpg",
     title: "Tomato - Local (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -149,8 +155,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg",
     title: "Carrot - Orange (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -171,8 +178,9 @@ var product = [
     title: "Onion (Loose)",
 
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -191,8 +199,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000159_27-fresho-potato.jpg",
     title: "Potato",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -211,8 +220,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000204_16-fresho-tomato-local.jpg",
     title: "Tomato - Local (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -231,8 +241,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg",
     title: "Carrot - Orange (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -253,8 +264,9 @@ var product = [
     title: "Onion (Loose)",
 
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -273,8 +285,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000159_27-fresho-potato.jpg",
     title: "Potato",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -293,8 +306,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000204_16-fresho-tomato-local.jpg",
     title: "Tomato - Local (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -313,8 +327,9 @@ var product = [
     img: "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg",
     title: "Carrot - Orange (Loose)",
     quantity: 1,
+    brand: "Fresho",
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
+    category: "vegetables",
     minPrice: 33,
     options: [
       {
@@ -329,21 +344,19 @@ var product = [
       },
     ],
   },
-];
 
-var pro = [
   {
-    img: "https://www.bigbasket.com/media/uploads/p/s/10000148_30-fresho-onion.jpg",
-    title: "Onion (Loose)",
-
+    img: "https://www.bigbasket.com/media/uploads/p/s/1214886_8-fresho-tender-coconut-water-no-added-sugar-flavours.jpg",
+    brand: "Fresho",
+    title: "Tender Coconut Water - No Added Sugar, Flavours",
     quantity: 1,
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
-    minPrice: 3,
+    category: "baverages",
+    minPrice: 33,
     options: [
       {
-        text: "1kg - 3 Rs",
-        discounrPrice: 3,
+        text: "1kg - 33 Rs",
+        discounrPrice: 33,
         originalPrice: 45,
       },
       {
@@ -353,103 +366,115 @@ var pro = [
       },
     ],
   },
+
   {
-    img: "https://www.bigbasket.com/media/uploads/p/s/10000159_27-fresho-potato.jpg",
-    title: "Potato",
+    img: "https://www.bigbasket.com/media/uploads/p/s/1223991_1-coca-cola-diet-coke-soft-drink.jpg",
+    brand: "Coca Cola",
+    title: "Diet Coke Soft Drink",
     quantity: 1,
     delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
-    minPrice: 41,
+    category: "baverages",
+    minPrice: 33,
     options: [
       {
-        text: "1kg - 41 Rs",
-        discounrPrice: 41,
+        text: "1kg - 33 Rs",
+        discounrPrice: 33,
+        originalPrice: 45,
+      },
+      {
+        text: "2kg - 95 Rs",
+        discounrPrice: 95,
+        originalPrice: 1005,
+      },
+    ],
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/264679_5-milky-mist-paneer-premium-fresh.jpg",
+    brand: "Milky Mist",
+    title: "Paneer - Rich in Protien, Calcium, Excellent Taste",
+    quantity: 1,
+    delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    minPrice: 33,
+    options: [
+      {
+        text: "1kg - 33 Rs",
+        discounrPrice: 33,
+        originalPrice: 45,
+      },
+      {
+        text: "2kg - 95 Rs",
+        discounrPrice: 95,
+        originalPrice: 1005,
+      },
+    ],
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/271205_14-id-fresho-idly-dosa-batter.jpg",
+    brand: "ID Fresho",
+    title: "Idly & Dosa Batter",
+    quantity: 1,
+    delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "snacks",
+    minPrice: 33,
+    options: [
+      {
+        text: "1kg - 33 Rs",
+        discounrPrice: 33,
+        originalPrice: 45,
+      },
+      {
+        text: "2kg - 95 Rs",
+        discounrPrice: 95,
+        originalPrice: 1005,
+      },
+    ],
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/1215171_3-bingo-tedhe-medhe-snacks-with-corn-rice-dal-masala-tadka.jpg",
+    brand: "Bingo",
+    title: "Tedhe Medhe Snacks - With Corn, Rice, Dal, Masala Tadka",
+    quantity: 1,
+    delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "snacks",
+    minPrice: 33,
+    options: [
+      {
+        text: "6 pkts - 25 Rs",
+        discounrPrice: 25,
+        originalPrice: 30,
+      },
+      {
+        text: "10 pkts - 40 Rs",
+        discounrPrice: 40,
         originalPrice: 50,
       },
-      {
-        text: "2kg - 95 Rs",
-        discounrPrice: 95,
-        originalPrice: 1005,
-      },
-    ],
-  },
-  {
-    img: "https://www.bigbasket.com/media/uploads/p/s/10000204_16-fresho-tomato-local.jpg",
-    title: "Tomato - Local (Loose)",
-    quantity: 1,
-    delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "fruite",
-    minPrice: 45,
-    options: [
-      {
-        text: "1kg - 45 Rs",
-        discounrPrice: 45,
-        originalPrice: 45,
-      },
-      {
-        text: "2kg - 95 Rs",
-        discounrPrice: 95,
-        originalPrice: 1005,
-      },
-    ],
-  },
-  {
-    img: "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg",
-    title: "Carrot - Orange (Loose)",
-    quantity: 1,
-    delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "fruite",
-    minPrice: 33,
-    options: [
-      {
-        text: "1kg - 33 Rs",
-        discounrPrice: 33,
-        originalPrice: 45,
-      },
-      {
-        text: "2kg - 95 Rs",
-        discounrPrice: 95,
-        originalPrice: 1005,
-      },
-    ],
-  },
-
-  {
-    img: "https://www.bigbasket.com/media/uploads/p/s/10000148_30-fresho-onion.jpg",
-    title: "Onion (Loose)",
-
-    quantity: 1,
-    delivery: "Standard Delivery: Today 8:00AM - 10:00AM",
-    category: "vegitables",
-    minPrice: 1,
-    options: [
-      {
-        text: "1kg - 1 Rs",
-        discounrPrice: 1,
-        originalPrice: 45,
-      },
-      {
-        text: "2kg - 95 Rs",
-        discounrPrice: 95,
-        originalPrice: 1005,
-      },
     ],
   },
 ];
 
-var producsts = JSON.parse(localStorage.getItem("products")) || pro;
+var producsts = JSON.parse(localStorage.getItem("products")) || product;
 var cartItems = JSON.parse(localStorage.getItem("cart_items")) || [];
 
 console.log(window);
 
-var cat = window.location.href.split("?");
-var category = cat[cat.length - 1];
+var filteredItems = "";
+var url = window.location.href;
+var category = "All Items";
 
-console.log(category);
-
-var filteredItems = producsts.filter(function (element) {
-  return element.category === category;
-});
+if (url.includes("?")) {
+  var cat = url.split("?");
+  category = cat[cat.length - 1];
+  console.log(category);
+  filteredItems = producsts.filter(function (element) {
+    return element.category === category;
+  });
+} else {
+  filteredItems = [...producsts];
+}
 
 document.getElementById(
   "categoryText"
@@ -478,14 +503,8 @@ function updateDisplay(arr) {
 
     // Create the span element inside the discountDiv
     const discountSpan = document.createElement("span");
-    discountSpan.setAttribute("class", "ng-binding");
     discountSpan.textContent = " *";
     discountDiv.appendChild(discountSpan);
-
-    // Add the asterisk-icon span element
-    const asteriskSpan = document.createElement("span");
-    asteriskSpan.setAttribute("class", "asterisk-icon");
-    discountDiv.appendChild(asteriskSpan);
 
     childDiv.appendChild(discountDiv);
 
@@ -497,7 +516,7 @@ function updateDisplay(arr) {
 
     // Create the first p element
     const title = document.createElement("p");
-    title.textContent = element.title;
+    title.textContent = element.brand;
     childDiv.appendChild(title);
 
     // Create the second p element
@@ -617,7 +636,7 @@ document.getElementById("51to100").addEventListener("change", function () {
       })
     );
   } else {
-    updateDisplay(producsts);
+    updateDisplay(filteredItems);
   }
 });
 
@@ -647,12 +666,12 @@ document.getElementById("201to500").addEventListener("change", function () {
   }
 });
 
-document.getElementById("Morethan500").addEventListener("change", function () {
+document.getElementById("morethan501").addEventListener("change", function () {
   if (this.checked) {
     console.log("Checked");
     updateDisplay(
       filteredItems.filter(function (element) {
-        return element.minPrice > 500;
+        return element.minPrice > 501;
       })
     );
   } else {
