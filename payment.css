@@ -1,10 +1,22 @@
 #mainContainer{
-    /* border: 1px solid lightgrey; */
     width: 90%;
     margin: auto;
     height: 700px;
     display: flex;
     gap: 40px;
+}
+#bigimg{
+    width: 45%;
+    margin-top: -8px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+#hr{
+    margin-top: -25px;
+    margin-bottom: 25px;
 }
 #leftsideBox{
     border: 1px solid lightgrey;
@@ -36,7 +48,6 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    /* border: 1px solid blue; */
     height: 50px;
     margin-top: 10px;
 }

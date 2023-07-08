@@ -4,7 +4,9 @@ var total = JSON.parse(localStorage.getItem("total"));
    document.getElementById("totalpayable").innerText = total;
 
 
-    var Netbanking = () => {
+
+
+        var Netbanking = () => {
         document.getElementById("mainDiv").innerHTML = null;
         var h3 = document.createElement("h3");
         h3.innerText = "Frequently Used Banks";
@@ -223,5 +225,5 @@ var total = JSON.parse(localStorage.getItem("total"));
     }
 
     var paymentSuccess = () =>{
-        window.location.href = "paymentsuccess.html";
+        window.location.href = "paymentSuccessful.html";
     }
