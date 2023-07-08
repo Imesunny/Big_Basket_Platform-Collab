@@ -1,0 +1,310 @@
+.pathTitle {
+  font-family: sans-serif;
+  /* margin: 2% 0px; */
+  margin-left: 11.9%;
+  font-size: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.shareon {
+  font-size: 15px;
+  margin-right: 11.9%;
+  width: 100%;
+  text-align: right;
+}
+
+.flex {
+  display: flex;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+i {
+  margin: 0px 5px;
+}
+
+.path {
+  margin: 2% 0px;
+}
+
+.category_section ul {
+  list-style: none;
+  margin-left: -30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.green-hover:hover {
+  color: green;
+}
+
+.green_line {
+  height: 1px;
+  background-color: green;
+  width: fit-content;
+}
+
+.product_image_zoomed {
+  height: 350px;
+  width: 350px;
+}
+
+.product_image {
+  width: 100%;
+  height: 100%;
+}
+
+.js-center {
+  justify-content: center;
+  gap: 10px;
+}
+
+.small_imges {
+  cursor: pointer;
+  height: 3.4rem;
+  width: 3.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.brandText {
+  font-size: 13px;
+
+  border-bottom: 1px solid black;
+}
+
+#main_product_title {
+  margin-top: -10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #222;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+
+#mrp_price_strikeof {
+  font-size: 13px;
+  color: rgb(82, 82, 82);
+}
+
+#discountedPrice {
+  margin-top: -18px;
+  margin: 0px;
+}
+
+.price_item {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.perkg {
+  font-size: 14px;
+}
+
+.redcolor_discount {
+  font-size: 13px;
+  color: rgb(172, 31, 31);
+  margin: 0px;
+}
+
+.all_taxes {
+  font-size: 13px;
+  margin: 0px;
+}
+
+.js-start {
+  justify-content: flex-start;
+}
+
+#item_quantity {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+#addToBagBtn {
+  margin-left: 8px;
+  cursor: pointer;
+  background: #84c225;
+  color: #fff;
+  border: 1px solid #84c225;
+  border-radius: 3px;
+  padding: 7px 30px;
+  border: none;
+  outline: none;
+}
+
+#addToBagBtn:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#saveBtn {
+  background: #fff;
+  margin: 0 8px;
+  padding: 7px 30px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #666;
+  border: 1px solid #979797;
+  border-radius: 3px;
+}
+
+#deliveryDate {
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.packSizes {
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+
+.first_price_mrp_card {
+  font-size: 15px;
+}
+
+.mrp-strike-through {
+  text-decoration: 1px solid gray line-through;
+  font-size: 14px;
+}
+
+.tick_mark_outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(156, 198, 61);
+  height: 100%;
+  width: 35px;
+}
+
+.pack_sizes_div {
+  background-color: rgb(230, 243, 211);
+  height: 48px;
+  width: 400px;
+  margin-bottom: 7px;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  border: 1px solid #d0d0d0;
+  cursor: pointer;
+}
+
+.pack_sizes_div:hover {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pack_sizes_div > p {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.horizontal-line {
+  height: 1px;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.second_half {
+  border-left: 1px solid rgb(0, 0, 0, 0.2);
+}
+
+.offer-text {
+  font-size: 25px;
+  /* font-weight: bold; */
+}
+
+.red-color {
+  color: rgb(187, 21, 21);
+}
+
+.get_item_for_free {
+  font-size: 15px;
+  color: #8f8f8f;
+  margin-top: 0.4rem;
+}
+
+.top-bottom-thin {
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+.al-cen {
+  align-items: center;
+}
+
+.heading_abount {
+  font-size: 21px;
+  margin-top: 40px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.padding-10 {
+  padding: 10px 0;
+}
+
+.about_the_product {
+  font-size: 16px;
+}
+
+.top-hide {
+  border-top: none;
+}
+
+.heading_abount ~ div {
+  font-size: 13px;
+  color: #6c6c6c;
+}
+
+.heading_abount ~ div > p {
+  font-size: 16px;
+  color: #6c6c6c;
+}
+
+#addToCart {
+  background-color: #66971b;
+  padding: 10px 50px;
+  color: white;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.child > p:nth-child(4) {
+  margin-top: 10px;
+}
+
+.plus,
+.minus {
+  height: 40px;
+  width: 40px;
+  border: 1px solid green;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.number_qty {
+  vertical-align: middle;
+  font-size: 15px;
+  margin: 0px 10px;
+}
+
+.freq {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 15px;
+  height: 51px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-left: 20px;
+}
