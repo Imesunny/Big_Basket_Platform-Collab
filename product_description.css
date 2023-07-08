@@ -48,8 +48,8 @@ i {
 }
 
 .product_image_zoomed {
-  height: 450px;
-  width: 450px;
+  height: 350px;
+  width: 350px;
 }
 
 .product_image {
@@ -70,7 +70,7 @@ i {
 }
 
 .brandText {
-  font-size: 14px;
+  font-size: 13px;
 
   border-bottom: 1px solid black;
 }
@@ -78,7 +78,7 @@ i {
 #main_product_title {
   margin-top: -10px;
   margin-bottom: 5px;
-  font-size: 20px;
+  font-size: 18px;
   color: #222;
   font-weight: 400;
   margin: 0 0 10px;
@@ -96,7 +96,7 @@ i {
 
 .price_item {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .perkg {
@@ -119,8 +119,8 @@ i {
 }
 
 #item_quantity {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   text-align: center;
 }
 
@@ -131,7 +131,7 @@ i {
   color: #fff;
   border: 1px solid #84c225;
   border-radius: 3px;
-  padding: 11px 30px;
+  padding: 7px 30px;
   border: none;
   outline: none;
 }
@@ -143,7 +143,7 @@ i {
 #saveBtn {
   background: #fff;
   margin: 0 8px;
-  padding: 11px 30px;
+  padding: 7px 30px;
   border: 1px solid rgb(0, 0, 0, 0.3);
   cursor: pointer;
   color: #666;
@@ -182,7 +182,7 @@ i {
 
 .pack_sizes_div {
   background-color: rgb(230, 243, 211);
-  height: 55px;
+  height: 48px;
   width: 400px;
   margin-bottom: 7px;
   border-radius: 0.3rem;
@@ -281,8 +281,8 @@ i {
 
 .plus,
 .minus {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border: 1px solid green;
   border-radius: 3px;
   display: flex;
