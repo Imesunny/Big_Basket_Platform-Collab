@@ -86,6 +86,12 @@ function updateDisplay(arr) {
     const img = document.createElement("img");
     img.setAttribute("src", element.img);
     img.setAttribute("alt", element.name);
+
+    img.addEventListener("click", function () {
+      localStorage.setItem("just-clicked", JSON.stringify(element));
+      window.location.assign("pageDescription.html");
+    });
+
     childDiv.appendChild(img);
 
     // Create the first p element

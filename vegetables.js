@@ -60,7 +60,7 @@ var product = [
 
 var products = JSON.parse(localStorage.getItem("products")) || product;
 
-var category = "Baverage";
+var category = "Vegetables";
 
 document.getElementById(
   "categoryText"
@@ -74,6 +74,7 @@ function updateDisplay(arr) {
     // Create the actual-child div
     const actualChildDiv = document.createElement("div");
     actualChildDiv.setAttribute("class", "actual-child");
+    actualChildDiv;
 
     // Create the child div
     const childDiv = document.createElement("div");
@@ -97,6 +98,12 @@ function updateDisplay(arr) {
     const img = document.createElement("img");
     img.setAttribute("src", element.img);
     img.setAttribute("alt", element.name);
+
+    img.addEventListener("click", function () {
+      localStorage.setItem("just-clicked", JSON.stringify(element));
+      window.location.assign("pageDescription.html");
+    });
+
     childDiv.appendChild(img);
 
     // Create the first p element

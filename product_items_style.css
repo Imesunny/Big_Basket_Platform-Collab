@@ -4,7 +4,7 @@
 }
 
 .container {
-  margin: 1% 3%;
+  margin: 2% 1%;
 }
 
 .container {
@@ -241,6 +241,10 @@ input[type="checkbox"] + span:hover {
   .category_section {
     display: none;
   }
+
+  .thinline {
+    display: none;
+  }
 }
 @media only screen and (max-width: 561px) {
   #holder_section {
@@ -251,6 +255,10 @@ input[type="checkbox"] + span:hover {
   }
 
   .category_section {
+    display: none;
+  }
+
+  .thinline {
     display: none;
   }
 }
@@ -264,6 +272,10 @@ input[type="checkbox"] + span:hover {
   }
 
   .category_section {
+    display: none;
+  }
+
+  .thinline {
     display: none;
   }
 }
