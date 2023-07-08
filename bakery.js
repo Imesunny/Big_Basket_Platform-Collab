@@ -12,6 +12,39 @@ var product = [
     DiscountPrice: 33,
     pricePerKg: 45,
   },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/40003156_8-milky-mist-natural-set-curd.jpg",
+    brand: "Milky Mist",
+    name: "Curd/Dahi - No Preservatives Added",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 103,
+    pricePerKg: 145,
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/mm/40096747_8-amul-malai-fresh-paneer.jpg",
+    brand: "Milky Mist",
+    name: "Malai-fresh paneer",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 103,
+    pricePerKg: 145,
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/mm/40148728_4-akshayakalpa-artisanal-organic-set-curd.jpg",
+    brand: "Milky Mist",
+    name: "Artisanal Organic Set Curd",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 108,
+    pricePerKg: 145,
+  },
 ];
 
 var products = JSON.parse(localStorage.getItem("products")) || product;
