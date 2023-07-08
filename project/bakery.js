@@ -1,0 +1,377 @@
+// Create the main holder_section div
+const holderSectionDiv = document.getElementById("holder_section");
+
+var product = [
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/264679_5-milky-mist-paneer-premium-fresh.jpg",
+    brand: "Milky Mist",
+    name: "Paneer - Rich in Protien, Calcium, Excellent Taste",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 33,
+    pricePerKg: 45,
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/40003156_8-milky-mist-natural-set-curd.jpg",
+    brand: "Milky Mist",
+    name: "Curd/Dahi - No Preservatives Added",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 103,
+    pricePerKg: 145,
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/mm/40096747_8-amul-malai-fresh-paneer.jpg",
+    brand: "Milky Mist",
+    name: "Malai-fresh paneer",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 103,
+    pricePerKg: 145,
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/mm/40148728_4-akshayakalpa-artisanal-organic-set-curd.jpg",
+    brand: "Milky Mist",
+    name: "Artisanal Organic Set Curd",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 108,
+    pricePerKg: 145,
+  },
+];
+
+var products = JSON.parse(localStorage.getItem("products")) || product;
+
+var category = "Bakery";
+
+document.getElementById(
+  "categoryText"
+).innerText = `${category} (${products.length})`;
+
+updateDisplay(products);
+
+function updateDisplay(arr) {
+  holderSectionDiv.innerHTML = "";
+  arr.forEach(function (element, index, arr) {
+    // Create the actual-child div
+    const actualChildDiv = document.createElement("div");
+    actualChildDiv.setAttribute("class", "actual-child");
+
+    // Create the child div
+    const childDiv = document.createElement("div");
+    childDiv.setAttribute("class", "child");
+
+    // Create the first div containing the text "GET XX% OFF"
+    const discountDiv = document.createElement("div");
+
+    var dis = element.pricePerKg - element.DiscountPrice;
+    dis = (dis * 100) / element.pricePerKg;
+    discountDiv.textContent = `GET ${Math.floor(dis)}% OFF`;
+
+    // Create the span element inside the discountDiv
+    const discountSpan = document.createElement("span");
+    discountSpan.textContent = " *";
+    discountDiv.appendChild(discountSpan);
+
+    childDiv.appendChild(discountDiv);
+
+    // Create the img element
+    const img = document.createElement("img");
+    img.setAttribute("src", element.img);
+    img.setAttribute("alt", element.name);
+
+    img.addEventListener("click", function () {
+      localStorage.setItem("just-clicked", JSON.stringify(element));
+      window.location.assign("pageDescription.html");
+    });
+
+    childDiv.appendChild(img);
+
+    // Create the first p element
+    const title = document.createElement("p");
+    title.textContent = element.brand;
+    childDiv.appendChild(title);
+
+    // Create the second p element
+    const realTitle = document.createElement("p");
+    realTitle.textContent = element.name;
+    childDiv.appendChild(realTitle);
+
+    const select = document.createElement("select");
+    select.setAttribute("id", "options");
+
+    const option = document.createElement("option");
+    option.setAttribute(
+      "value",
+      `${element.DiscountPrice}|${element.pricePerKg}`
+    );
+    option.textContent = `1kg - ${element.DiscountPrice}`;
+    select.appendChild(option);
+
+    childDiv.appendChild(select);
+
+    // Create the lower-holder div
+    const lowerHolderDiv = document.createElement("div");
+    lowerHolderDiv.setAttribute("class", "lower-holder");
+
+    // Create the prices p element
+    const pricesP = document.createElement("p");
+    pricesP.setAttribute("id", "prices");
+    pricesP.innerHTML = `MRP: <span>Rs ${element.pricePerKg}</span> Rs ${element.DiscountPrice}`;
+
+    lowerHolderDiv.appendChild(pricesP);
+
+    // Create the delivery div
+    const deliveryDiv = document.createElement("div");
+    deliveryDiv.setAttribute("id", "delivery");
+
+    // Create the truck icon
+    const truckIcon = document.createElement("i");
+    truckIcon.setAttribute("class", "fa-solid fa-truck fa-lg");
+    deliveryDiv.appendChild(truckIcon);
+
+    // Create the deliveryTime span
+    const deliveryTimeSpan = document.createElement("span");
+    deliveryTimeSpan.setAttribute("id", "deliveryTime");
+    deliveryTimeSpan.textContent = "Standard Delivery: Today 8:00AM - 10:00AM";
+    deliveryDiv.appendChild(deliveryTimeSpan);
+
+    lowerHolderDiv.appendChild(deliveryDiv);
+
+    // Create the addtocartbutton div
+    const addToCartButtonDiv = document.createElement("div");
+    addToCartButtonDiv.setAttribute("id", "addtocartbutton");
+
+    // Create the quantity input section
+    const quantitySection = document.createElement("div");
+    const quantityLabel = document.createElement("span");
+    quantityLabel.textContent = "Qty";
+    const quantityInput = document.createElement("input");
+    quantityInput.setAttribute("class", "quantity");
+    quantityInput.setAttribute("type", "number");
+    quantityInput.setAttribute("autocomplete", "off");
+    quantityInput.setAttribute("value", "1");
+    quantityInput.setAttribute("min", "1");
+    quantitySection.appendChild(quantityLabel);
+    quantitySection.appendChild(quantityInput);
+    addToCartButtonDiv.appendChild(quantitySection);
+
+    // Create the add button
+    const addButton = document.createElement("button");
+    addButton.textContent = "ADD ";
+
+    addButton.addEventListener("click", function () {
+      var cartItems = JSON.parse(localStorage.getItem("cart_items")) || [];
+      cartItems.push(element);
+      localStorage.setItem("cart_items", JSON.stringify(cartItems));
+
+      var notificatoinMessage = document.getElementById("message");
+      notificatoinMessage.textContent = `Successfully added ${element.title} to the basket`;
+      document.getElementById("modal_success").style.display = "flex";
+    });
+
+    // Create the trash can icon
+    const trashCanIcon = document.createElement("i");
+    trashCanIcon.setAttribute("class", "fa-solid fa-trash-can fa-lg");
+    addButton.appendChild(trashCanIcon);
+
+    addToCartButtonDiv.appendChild(addButton);
+    lowerHolderDiv.appendChild(addToCartButtonDiv);
+    childDiv.appendChild(lowerHolderDiv);
+    actualChildDiv.appendChild(childDiv);
+    holderSectionDiv.appendChild(actualChildDiv);
+  });
+}
+
+document.getElementById("21to50").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return element.DiscountPrice >= 21 && element.DiscountPrice <= 50;
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("51to100").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return element.DiscountPrice >= 51 && element.DiscountPrice <= 100;
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("101to200").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return element.DiscountPrice >= 101 && element.DiscountPrice <= 200;
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("201to500").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return element.DiscountPrice >= 201 && element.DiscountPrice <= 500;
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("morethan501").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return element.DiscountPrice > 501;
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("upto5").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return (
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg <
+          5
+        );
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("5to10").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return (
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg >=
+            5 &&
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg <=
+            10
+        );
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("10to15").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return (
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg >=
+            10 &&
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg <=
+            15
+        );
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("15to25").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return (
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg >=
+            15 &&
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg <=
+            25
+        );
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document.getElementById("morethan25").addEventListener("change", function () {
+  if (this.checked) {
+    console.log("Checked");
+    updateDisplay(
+      products.filter(function (element) {
+        return (
+          ((element.pricePerKg - element.DiscountPrice) * 100) /
+            element.pricePerKg >
+          25
+        );
+      })
+    );
+  } else {
+    updateDisplay(products);
+  }
+});
+
+document
+  .getElementById("modal_success")
+  .addEventListener("click", function (event) {
+    var modal = document.getElementById("modal_success");
+    if (event.target == modal) {
+      event.target.style.display = "none";
+    }
+  });
+
+document
+  .querySelector(".modal_success>i:nth-child(3)")
+  .addEventListener("click", function (event) {
+    var modal = document.getElementById("modal_success");
+    modal.style.display = "none";
+  });
+
+  var basket = document.querySelector("#btn");
+  basket.addEventListener("click", function () {
+    window.location.href = "cart.html";
+  });
+
+  var bas = document.querySelector(".navbarimg");
+  bas.addEventListener("click", function () {
+    window.location.href = "./project/index.html";
+  });
+
