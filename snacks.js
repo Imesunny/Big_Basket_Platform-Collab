@@ -12,6 +12,39 @@ var product = [
     DiscountPrice: 33,
     pricePerKg: 40,
   },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/242671_1-nandini-goodlife-toned-milk.jpg",
+    brand: "Milky Mist",
+    name: "GoodLife UHT Treated Toned Milk",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 30,
+    pricePerKg: 40,
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/271205_14-id-fresho-idly-dosa-batter.jpg",
+    brand: "iD Fresho",
+    name: "Idly & Dosa Batter",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 70,
+    pricePerKg: 80,
+  },
+
+  {
+    img: "https://www.bigbasket.com/media/uploads/p/s/100265004_16-cadbury-dairy-milk-silk-fruit-nut-chocolate-bar.jpg",
+    brand: "Cadbury Dairy Milk Silk",
+    name: "Silk Fruit & Nut Chocolate Bar",
+    quantity: 1,
+    deleveryDate: "Standard Delivery: Today 8:00AM - 10:00AM",
+    category: "bakery",
+    DiscountPrice: 157,
+    pricePerKg: 180,
+  },
 ];
 
 var products = JSON.parse(localStorage.getItem("products")) || product;
