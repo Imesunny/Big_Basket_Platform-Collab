@@ -43,7 +43,7 @@ var VegArr = [
        deleveryDate: "Standard_Delivery : 10 july",
 
     }
-]
+];
 
 var cartArr = JSON.parse(localStorage.getItem("cart_items")) || [];
 
@@ -60,7 +60,6 @@ function updateTableContent(VegArr) {
         var subtotal = (item.quantity || 0) * item.pricePerKg;
         totalItems += (item.quantity || 0);
         totalAmount += subtotal;
-        // savings += (item.pricePerKg - item.DiscountPrice) * (item.quantity || 0);
         var savings = (item.pricePerKg - item.DiscountPrice) * (item.quantity || 0);
         totalSavings += savings;
     
@@ -122,19 +121,21 @@ function updateTableContent(VegArr) {
       });
 
       var deleteButton = document.createElement("button");
-deleteButton.classList.add("delete-button");
-deleteButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
+        deleteButton.classList.add("delete-button");
+        deleteButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
 
-var deleteButtonWrapper = document.createElement("td");
-deleteButtonWrapper.style.display = "flex";
-deleteButtonWrapper.style.justifyContent = "center";
-deleteButtonWrapper.appendChild(deleteButton);
+        var deleteButtonWrapper = document.createElement("td");
+        deleteButtonWrapper.style.display = "flex";
+        deleteButtonWrapper.style.justifyContent = "center";
+        deleteButtonWrapper.appendChild(deleteButton);
 
         
         deleteButton.addEventListener("click", function () {
-            VegArr.splice(index, 1); 
-            updateTableContent(VegArr);
-            localStorage.setItem("cart_items");
+            cartArr.splice(index, 1); 
+            updateTableContent(cartArr);
+            // localStorage.setItem("cart_items");
+            localStorage.setItem("cart_items", JSON.stringify(VegArr));
+
         
         var tbody = document.querySelector("table tbody");
         tbody.removeChild(row);
@@ -148,9 +149,6 @@ deleteButtonWrapper.appendChild(deleteButton);
       var subtotal = (item.quantity || 0) * item.pricePerKg;
       itemSubtotal.textContent = "₹" + subtotal;
   
-    //   var itemSavings = document.createElement("td");
-    //   var savings = (item.pricePerKg - item.DiscountPrice) * (item.quantity || 0);
-    //   itemSavings.textContent = "₹" + savings;/
 
     var itemSavings = document.createElement("td");
     itemSavings.textContent = "₹" + savings;
@@ -168,7 +166,7 @@ deleteButtonWrapper.appendChild(deleteButton);
   
     var summaryRow = document.createElement("tr");
     summaryRow.innerHTML = `
-      <td colspan="2">Fruits & Vegetables ${VegArr.length} items</td>
+      <td colspan="2">Fruits & Vegetables ${cartArr.length} items</td>
       <td>Total: ${totalItems}</td>
       <td>Total Amount: ₹${totalAmount}</td>
       <td>Total Savings: ₹${totalSavings}</td>
@@ -213,7 +211,7 @@ deleteButtonWrapper.appendChild(deleteButton);
     VegArr = [];
     
     // Clear the local storage
-    localStorage.removeItem("cart_items");
+    localStorage.removeItem("VegArr");
     
     
     var tbody = document.querySelector("table tbody");
@@ -247,3 +245,17 @@ deleteButtonWrapper.appendChild(deleteButton);
     savingsTag.textContent = "₹0";
   });
   
+
+  //Checkout
+  var CheckOut = document.querySelector("#checkout");
+  CheckOut.addEventListener("click", function (){
+
+        window.location.href = "address.html";
+  });
+
+  //continue shopping
+  var CntShopping = document.querySelector("#continueShop");
+  continueShop.addEventListener("click", function (){
+
+        window.location.href = "project/index.html";
+  });
