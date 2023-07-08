@@ -4,7 +4,7 @@
 }
 
 .container {
-  margin: 2% 1%;
+  margin: 3% 1%;
 }
 
 .container {
@@ -56,15 +56,17 @@
 }
 
 .child > p {
-  font-size: 16px;
+  font-size: 14px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 10px;
+  margin-bottom: 8px;
 }
 
 #options {
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #prices > span:first-of-type {
@@ -72,7 +74,7 @@
 }
 
 #delivery > span {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 20px;
 }
 
@@ -169,7 +171,7 @@
 }
 
 #categoryText {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 #categoryText::first-letter {
@@ -200,7 +202,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"] + span {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 input[type="checkbox"] + span:hover {
