@@ -376,3 +376,13 @@ document
     var modal = document.getElementById("modal_success");
     modal.style.display = "none";
   });
+
+var basket = document.querySelector("#btn");
+basket.addEventListener("click", function () {
+  window.location.href = "cart.html";
+});
+
+var bas = document.querySelector(".navbarimg");
+bas.addEventListener("click", function () {
+  window.location.href = "./project/index.html";
+});
