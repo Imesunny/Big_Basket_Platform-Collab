@@ -1,3 +1,6 @@
+
+
+
 #CheckOut-heading{
     text-align: left;
     margin: 10px;
@@ -336,3 +339,16 @@ table {
     justify-content: center;
 
   }
+  #bigimg{
+    width: 45%;
+    margin-top: -8px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+#hr{
+    margin-top: -25px;
+    margin-bottom: 25px;
+  
