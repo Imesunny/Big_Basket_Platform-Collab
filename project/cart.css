@@ -1,0 +1,149 @@
+#CheckOut-heading{
+    text-align: left;
+    margin: 10px;
+    font-size: 30px;
+    border: 0px solid black;
+    color: grey;
+}
+
+#Promos{
+    
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+#Promos>button{
+    height: 25px;
+    border-radius:5px;
+    border-color: orange;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: small;
+}
+
+table {
+    width: 100%;
+      border-collapse: collapse;
+      background-color: #f2f2f2;
+      margin-bottom: 50px;
+  }
+
+  th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+  }
+
+  th {
+    background-color: rgb(81, 77, 77);
+    color: #fff;
+  }
+
+  th:nth-child(5) {
+    background-color: rgb(151, 188, 131);
+    color: #1a1818;
+  }
+  
+  
+  #Content1aUp{
+    display: flex; 
+    margin: auto;
+    
+  }
+  #checkout_UP {
+    position: relative;
+
+    margin: 10px 10px;
+  }
+
+  #checkout {
+    position: absolute;
+    right: 0;
+  }
+
+  #Content1aUp {
+    position: relative;
+    /* border: 2px solid blue; */
+  }
+  
+   #continueShop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+
+#upperAdjustment{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    margin-right: 10px;
+    height: 30px;
+    
+}
+
+#upperAdjustment1{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    margin-right: 10px;
+
+}
+
+#checkOutDetails{
+    /* border: 2px solid orange; */
+    display: flex;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+#LowerAdjustment{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid magenta; */
+}
+
+#checkOutDetails #checkout_right{
+  margin-top: 50%;
+  margin-left: 20px;   
+  margin-right: 20px;
+}
+
+#Empty button{
+    border-radius: 5px;
+    border-color: green;
+    background-color: rgb(221, 218, 218);
+    color: black;
+    height: 25px;
+}
+
+#Empty button{
+    border-radius: 5px;
+    border-color: green;
+    background-color: rgb(221, 218, 218);
+    color: black;
+    height: 35px;
+}
+
+#continueShop button{
+    border-radius: 5px;
+    border-color: green;
+    background-color: rgb(221, 218, 218);
+    color: black;
+    height: 35px;
+}
+
+#checkout{
+    background-color: rgb(200, 200, 68);
+    height: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+ 
+#change{
+    margin-top: 50px;
+}
+
+
+
