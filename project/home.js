@@ -201,6 +201,6 @@ basket.addEventListener("click",function(){
 
 var vegs = document.querySelector("#veg");
 vegs.addEventListener("click",function(){
-   location.href = "product.html";
+   location.href = "vegetables.html";
 })
  
