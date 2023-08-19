@@ -257,5 +257,5 @@ function updateTableContent(VegArr) {
   var CntShopping = document.querySelector("#continueShop");
   continueShop.addEventListener("click", function (){
 
-        window.location.href = "project/index.html";
+        window.location.href = "index.html";
   });
