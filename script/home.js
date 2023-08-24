@@ -1,7 +1,7 @@
 var vegetables = [
      {
         img: "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
-        name: "capsicum - Green (Loose)",
+        name: "Capsicum - Green (Loose)",
         pricePerKg:90,
         DiscountPrice: 81,
         deleveryDate: "Standard_Delivery : 10 july",
@@ -19,7 +19,7 @@ var vegetables = [
      ,
      {
         img: "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
-        name: "capsicum - Green (Loose)",
+        name: "Capsicum - Green (Loose)",
         pricePerKg:90,
         DiscountPrice: 81,
         deleveryDate: "Standard_Delivery : 10 july",
@@ -57,18 +57,26 @@ array.forEach(function(item){
     var card = document.createElement("div");
     card.setAttribute("id","card");
     var image = document.createElement("img");
-    var name = document.createElement("p");
+    var name = document.createElement("h3");
     var pricePerKg = document.createElement("p");
     var DiscountPrice = document.createElement("p");
     var deleveryDate = document.createElement("p");
     var addToCart = document.createElement("button");
 
     name.innerText = item.name;
+    name.style.fontWeight="bolder"
     pricePerKg.innerText = `Price per kg :- `+ item.pricePerKg;
+    pricePerKg.style.textDecoration="line-through";
+    pricePerKg.style.fontWeight="bold";
     DiscountPrice.innerText = `Discount price :-`+ item.DiscountPrice;
+    DiscountPrice.style.fontWeight="bold";
     deleveryDate.innerText = item.deleveryDate;
+    deleveryDate.style.fontWeight="bold";
     image.src=item.img;
+    image.style.borderInline="10px";
     addToCart.innerText ="Add To Cart";
+    addToCart.style.backgroundColor="#f8da79"
+    addToCart.style.borderColor="#f8da79";
 
     addToCart.addEventListener("click",function(){
         addData(item);
@@ -85,7 +93,7 @@ array.forEach(function(item){
 var bestSeller = [
    {
       img: "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
-      name: "capsicum - Green (Loose)",
+      name: "Capsicum - Green (Loose)",
       pricePerKg:90,
       DiscountPrice: 81,
       deleveryDate: "Standard_Delivery : 10 july",
@@ -103,7 +111,7 @@ var bestSeller = [
    ,
    {
       img: "https://www.bigbasket.com/media/uploads/p/s/10000067_23-fresho-capsicum-green.jpg",
-      name: "capsicum - Green (Loose)",
+      name: "Capsicum - Green (Loose)",
       pricePerKg:90,
       DiscountPrice: 81,
       deleveryDate: "Standard_Delivery : 10 july",
