@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-<head> 
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LogIn</title>
     <link rel="stylesheet" href="./Style/Signup.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-        <form id="login">
-            <input type="email" id="lEmail" placeholder="Email">
-            <input type="password" id="lPass" placeholder="Password">
-            <div class="recover">
-                <a href="#">Forgot Password?</a>
-            </div>
-        </form>
-        <button type="submit" id="sumbit">Continue</button>
-        <div class="member">
+    <div id="main">
+        <form action="">
+          <h3>LOGIN</h3>
+          <!-- <label for="email">Email</label> -->
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            id="email"
+            required
+          />
+          <!-- <label for="password">Password</label> -->
+          <input
+            type="password"
+            placeholder="Enter Password"
+            id="epass"
+            required
+          />
+          <input type="submit" id="submit" value="Continue" />
+          <p>
+            <!-- By continuing, I accept TCP-bgbasket's
+            <a href="">Terms and Conditions</a> and <a href="">Privecy policy.</a> -->
             Not a member? <a href="./Signup.html"> Register Now</a>
-        </div>
-    </div>
-    <script src="./script/login.js"></script>
-</body>
-</html>
+          </p>
+        </form>
+      </div>
+    </body>
+  </html>
+<script src="./script/login.js"></script>

@@ -1,18 +1,29 @@
+arrdata = JSON.parse(localStorage.getItem("signupdata")) || [];
+console.log(arrdata);
+document.querySelector("form").addEventListener("submit", logindata);
+function logindata(event) {
+  event.preventDefault();
 
+  let mail = document.querySelector("#email").value;
+  let pswrd = document.querySelector("#epass").value;
 
-var login = document.querySelector("#login");
+  let auth = false;
+  localStorage.setItem("auth", JSON.stringify(auth));
 
-login.addEventListener("submit", function() {
-    event.preventDefault();
-    var users = JSON.parse(localStorage.getItem("users")) || [];
-    var loggedInUser = users.find(function(user) {
-      return user.email === login.lEmail.value && user.pass === login.lPass.value;
-    });
-  
-    if (loggedInUser) {
-      alert("Login successful");
-      window.location.assign("");
-    } else {
-      alert("Invalid credentials");
+  let flag = false;
+  for (let i = 0; i < arrdata.length; i++) {
+    if (arrdata[i].email == mail && arrdata[i].password == pswrd) {
+      flag = true;
     }
-  });
+  }
+
+  if (flag) {
+    auth = true;
+    localStorage.setItem("auth", JSON.stringify(auth));
+    window.location.href = "index.html";
+  } else if (arrdata[i].password == pswrd) {
+    alert("please enter valid password");
+  } else if (arrdata[i].email == mail) {
+    alert("please enter valid email");
+  }
+}

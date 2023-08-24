@@ -185,7 +185,7 @@ read.addEventListener("click",function(){
 
 var login = document.querySelector(".but1");
 login.addEventListener("click",function(){
-   location.href = "login.html";
+   location.href = "login_with_number.html";
 })
 
 

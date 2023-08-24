@@ -384,5 +384,5 @@ basket.addEventListener("click", function () {
 
 var bas = document.querySelector(".navbarimg");
 bas.addEventListener("click", function () {
-  window.location.href = "./project/index.html";
+  window.location.href = "index.html";
 });
