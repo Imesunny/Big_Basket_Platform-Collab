@@ -15,5 +15,5 @@ function funct(event) {
 document.querySelector("#submit").addEventListener("click", funct2);
 function funct2(event) {
   event.preventDefault();
-  window.location.href = "signup.html";
+  window.location.href = "login.html";
 }
